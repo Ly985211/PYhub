@@ -1,6 +1,8 @@
 t=1,2,[30,40]
 t[2]+=[50]
-"""
+
+
+"""output:
 1.
 Traceback (most recent call last):
   File "d:\PYhub\learningPY\seqs.py", line 2, in <module>

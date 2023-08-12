@@ -1,5 +1,7 @@
 from array import array
 from random import random
+
+
 floats=array('d',(random() for i in range(10**7)))
 print(floats[-1])
 
@@ -14,7 +16,8 @@ fp.close()
 
 print(floats2==floats)
 
-"""
+
+"""output:
 0.7980881882043565
 True
 """
