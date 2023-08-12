@@ -1,11 +1,11 @@
 class Strkey(dict):
 
-    def __missing__(self,key):
-        if isinstance(key,str):
+    def __missing__(self, key):
+        if isinstance(key, str):
             raise KeyError(key)
         return self[str(key)]
     
-    def get(self,key,default=None):
+    def get(self, key, default=None):
         try:
             return self[key]
         except KeyError:
@@ -16,7 +16,7 @@ class Strkey(dict):
 
 
 if __name__=="__main__":
-    d=Strkey([('2','two'),('3','three')])  # dict_keys(['2', '3'])
+    d=Strkey([('2', 'two'),('3', 'three')])  # dict_keys(['2', '3'])
     print(d.keys())
     print(d[2])  # two
     print(d[3])  # three
