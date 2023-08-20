@@ -1,0 +1,15 @@
+Geforce MX250
+
+#GPU
+copy and add:
+Time = 245.594 +- 1.068 ms.
+add only:
+Time = 12.1816 +- 0.05123 ms
+add only(double):
+Time = 24.2425 +- 0.0331456 ms
+
+#CPU
+no opt:
+Time = 112.463 +- 9.14563 ms
+O3:
+Time = 41.2866 +- 6.51043 ms
