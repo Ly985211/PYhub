@@ -1,0 +1,7 @@
+  
+
+   正在创建库 a.lib 和对象 a.exp
+
+D:\cudat>.\a
+hello gpu!from block 0 and thread 0
+hello gpu!from block 1 and thread 0
