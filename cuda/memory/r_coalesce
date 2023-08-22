@@ -1,0 +1,8 @@
+add_coalesce:
+Time = 15.1279 +- 0.0647778 ms
+
+offset:
+Time = 15.1411 +- 0.0259111 ms
+
+stride:
+Time = 87.629 +- 0.603942 ms

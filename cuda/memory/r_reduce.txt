@@ -1,0 +1,72 @@
+****************************************************************************************
+#calculation only(10,float)
+****************************************************************************
+
+Using global memory only:
+Time = 44.4396 ms.
+sum = 123633392.000000.
+
+Using static shared memory:
+Time = 34.2548 ms.
+sum = 123633392.000000.
+
+Using dynamic shared memory:
+Time = 34.4596 ms.
+sum = 123633392.000000.
+
+atomicAdd, O3 opt:
+Time = 27.561 ms.
+sum = 123633392.000000.
+
+****************************************************************************************
+#calculation and data copy(15,float)
+****************************************************************************
+
+Using global memory only:
+Time = 321.271 +- 15.5488 ms
+sum = 186133392.000000.
+
+
+Using static shared memory:
+Time = 318.136 +- 6.34183 ms
+sum = 186133392.000000.
+
+
+Using static shared memory and atomicAdd:
+Time = 309.318 +- 6.64972 ms
+sum = 186133392.000000.
+
+---------------------------------------------
+O3 opt:
+
+Using global memory only:
+Time = 299.643 +- 2.69258 ms
+sum = 186133392.000000.
+
+
+Using static shared memory:
+Time = 280.618 +- 3.52558 ms
+sum = 186133392.000000.
+
+
+Using static shared memory and atomicAdd:
+Time = 274.593 +- 3.53995 ms
+sum = 186133392.000000.
+
+****************************************************************************************
+#calculation and data copy(15,double)
+****************************************************************************
+
+Using global memory only:
+Time = 540.073 +- 8.09128 ms
+sum = 184499999.997839.
+
+
+Using static shared memory:
+Time = 540.349 +- 9.43398 ms
+sum = 184499999.997839.
+
+
+Using static shared memory and atomicAdd:
+Time = 537.702 +- 7.64444 ms
+sum = 184499999.997839.

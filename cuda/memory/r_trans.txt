@@ -1,0 +1,15 @@
+transpose with coalesced read:
+Time = 28.9542 +- 1.24851 ms
+
+transpose with coalesced write:  #fail to call __ldg automatically
+Time = 30.6486 +- 0.0653641 ms
+
+transpose with coalesced write(__ldg read):  
+Time = 14.1812 +- 0.0078125 ms
+
+transpose with share memory:
+Time = 12.6594 +- 0.00956832 ms
+
+transpose with share memory(bank conflict):
+Time = 20.5377 +- 0.0253154 ms
+A = B^T
