@@ -1,0 +1,4 @@
+Using static shared memory, atomicAdd and the cooperative group:
+
+Time = 293.539 +- 10.9901 ms
+sum = 186133392.000000
