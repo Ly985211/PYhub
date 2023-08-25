@@ -1,4 +1,4 @@
-#include "error.cuh"
+#include "../error.cuh"
 #include <stdio.h>
 #include <cooperative_groups.h>
 

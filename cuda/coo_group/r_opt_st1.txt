@@ -1,0 +1,31 @@
+# use dynamic shared memory for the first round.
+
+
+(BLOCK_SIZE_2 = 256)
+Using static shared memory, the cooperative group with optimization:
+Time = 292.977 +- 10.5575 ms
+sum = 184500064.000000.
+
+Using dynamic shared memory, the cooperative group with optimization:
+Time = 297.268 +- 8.16146 ms
+sum = 184500192.000000.
+
+
+(BLOCK_SIZE_2 = 256)
+Using static shared memory, the cooperative group with optimization:
+Time = 302.681 +- 8.44745 ms
+sum = 184500064.000000.
+
+Using dynamic shared memory, the cooperative group with optimization:
+Time = 301.886 +- 5.84233 ms
+sum = 184500192.000000.
+
+
+(BLOCK_SIZE_2 = 512)
+Using static shared memory, the cooperative group with optimization:
+Time = 259.177 +- 8.97914 ms
+sum = 184500064.000000.
+
+Using dynamic shared memory, the cooperative group with optimization:
+Time = 257.638 +- 8.79364 ms
+sum = 184500160.000000.
