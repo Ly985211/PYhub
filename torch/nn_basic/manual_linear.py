@@ -43,6 +43,8 @@ previous_loss = 0
 for iteration in range(max_iter):
 
     predict = model.forward(t_unknown)
+    # def __call__ for model for model(t) to be okay.
+    # in nn, this has been done, what's more, use forward is wrong.
     loss = MSEloss(predict, t_Celsius)
 
     grad_w = 2 * ((predict - t_Celsius) * t_unknown).mean() # the magic place
